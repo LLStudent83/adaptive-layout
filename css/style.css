@@ -1,0 +1,890 @@
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../fonts/OpenSans-Bold.woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../fonts/OpenSans-Regular.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+.header {
+  background-image: url("../images/football_767.jpg");
+  background-repeat: no-repeat;
+  background-color: #000000;
+  background-position: center top;
+  background-size: cover;
+  position: relative;
+  padding: 30px 20px 80px 20px;
+}
+
+.header::before {
+  content: "";
+  background-color: #1d1d3f;
+  opacity: 0.9;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.header_logo_svg,
+.footer_logo_svg {
+  display: block;
+  fill: #ffffff;
+  width: 130px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.header_title {
+  max-width: 270px;
+  margin: 130px auto 85px auto;
+  position: relative;
+}
+
+.header_title span,
+.header_title {
+  font-family: OpenSans-Bold, sans-serif;
+  color: #ffffff;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+h1 span.header_title_second {
+  display: block;
+  padding: 25px 0 0 45px;
+}
+
+.header_button,
+.footer_button {
+  position: relative;
+  max-width: 280px;
+  min-width: 100px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+button {
+  height: 30px;
+  width: 100%;
+  background-color: #5e42b0;
+  border: none;
+  border-radius: 15px;
+}
+
+.header_button_app,
+.header_button_google,
+.footer_button_app,
+.footer_button_google {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.header_name_button_app,
+.header_name_button_google,
+.footer_name_button_app,
+.footer_name_button_google {
+  width: 90px;
+  text-align: left;
+  margin-left: 10px;
+}
+
+.header_name_button_normal,
+.footer_name_button_normal {
+  display: block;
+  font-family: OpenSans-Regular, sans-serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header_name_button_bold,
+.footer_name_button_bold {
+  display: block;
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 8px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header_button_svg_app,
+.header_button_svg_google,
+.footer_button_svg_app,
+.footer_button_svg_google {
+  height: 22px;
+  fill: #ffffff;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .header {
+    background-image: url(../images/football_1280.jpg);
+  }
+  .header_logo_svg,
+  .footer_logo_svg {
+    width: 190px;
+  }
+  .header_title span,
+  .header_title {
+    font-size: 64px;
+  }
+  .header_title {
+    max-width: 610px;
+  }
+  h1 span.header_title_second {
+    padding: 0 0 0 90px;
+  }
+  .header_button,
+  .footer_button {
+    display: flex;
+    justify-content: space-around;
+    max-width: 650px;
+  }
+  .header_button_app,
+  .header_button_google,
+  .footer_button_app,
+  .footer_button_google {
+    width: 300px;
+    height: 70px;
+    padding-top: 15px;
+  }
+  button {
+    border-radius: 35px;
+  }
+  .header_button_svg_app,
+  .header_button_svg_google,
+  .footer_button_svg_app,
+  .footer_button_svg_google {
+    height: 42px;
+  }
+  .header_name_button_bold,
+  .footer_name_button_bold,
+  .header_name_button_normal,
+  .footer_name_button_normal {
+    font-size: 14px;
+  }
+  .header_name_button_app,
+  .header_name_button_google,
+  .footer_name_button_app,
+  .footer_name_button_google {
+    margin-left: 30px;
+    width: 145px;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
+  .header {
+    background-image: url(../images/football_1920.jpg);
+  }
+
+  .header_logo_svg,
+  .footer_logo_svg {
+    width: 190px;
+  }
+
+  .header_title span,
+  .header_title {
+    font-size: 90px;
+  }
+
+  .header_title {
+    max-width: 1510px;
+  }
+
+  h1 span.header_title_second {
+    padding: 0 0 0 450px;
+  }
+
+  .header_button,
+  .footer_button {
+    display: flex;
+    justify-content: space-around;
+    max-width: 670px;
+  }
+
+  .header_button_app,
+  .header_button_google,
+  .footer_button_app,
+  .footer_button_google {
+    width: 315px;
+    height: 75px;
+    padding-top: 15px;
+  }
+
+  button {
+    border-radius: 37px;
+  }
+
+  .header_button_svg_app,
+  .header_button_svg_google,
+  .footer_button_svg_app,
+  .footer_button_svg_google {
+    height: 48px;
+  }
+
+  .header_name_button_bold,
+  .footer_name_button_bold,
+  .header_name_button_normal,
+  .footer_name_button_normal {
+    font-size: 14px;
+  }
+
+  .header_name_button_app,
+  .header_name_button_google,
+  .footer_name_button_app,
+  .footer_name_button_google {
+    margin-left: 30px;
+    margin-top: 5px;
+    width: 145px;
+  }
+}
+
+.main_title {
+  max-width: 280px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 50px;
+  color: #e7e7e7;
+  text-transform: uppercase;
+}
+
+.main_article_section_img {
+  display: block;
+  height: 225px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main_article_blabla_01,
+.main_article_blabla_02,
+.main_article_blabla_03 {
+  padding: 60px 20px 55px 20px;
+}
+
+.main_article_blabla_01 {
+  padding-top: 80px;
+  background-color: #fafafa;
+}
+
+.main_article_blabla_02 {
+  background-color: #f5f4f9;
+}
+
+.main_article_blabla_03 {
+  background-color: #5e42b0;
+}
+
+.main_subtitle {
+  margin-top: 0;
+  margin-bottom: 25px;
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main_subtitle::after {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #5e42b0;
+  position: relative;
+  top: -12px;
+}
+
+.main_article_blabla_subtitle_number {
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 14px;
+  vertical-align: super;
+  color: #000000;
+}
+
+.main_article_blabla_03 .main_article_blabla_subtitle_number {
+  color: #000000;
+}
+
+.main_article_blabla_03 .main_subtitle::after {
+  background-color: #ffffff;
+}
+
+.main_article_blabla_subtitle_text {
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 23px;
+  color: #c1c1c1;
+  text-transform: uppercase;
+}
+
+.main_article_blabla_text_01,
+.main_article_blabla_text_02,
+.main_article_blabla_text_03 {
+  font-family: OpenSans-Regular, sans-serif;
+  font-size: 15px;
+  max-width: 280px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: #000000;
+}
+
+.main_article_blabla_text_03 {
+  color: #c2c3cd;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  /* здвигаем фудболиста в лево*/
+  .main_title {
+    max-width: 445px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    font-size: 80px;
+    padding-left: 260px;
+  }
+  .main_article_athlets {
+    position: relative;
+  }
+
+  .main_article_athlets .main_article_section_img {
+    position: absolute;
+    left: -180px;
+    top: 40px;
+  }
+
+  .main_article_blabla_01,
+  .main_article_blabla_02,
+  .main_article_blabla_03 {
+    padding: 40px 20px 40px 260px;
+  }
+
+  .main_article_blabla_01 {
+    background-color: #ffffff;
+    padding-top: 0;
+  }
+
+  .main_subtitle {
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 445px;
+  }
+
+  .main_subtitle::after {
+    width: 21px;
+    height: 6px;
+    border-radius: 3px;
+  }
+
+  .main_article_blabla_subtitle_number {
+    font-size: 18px;
+  }
+
+  .main_article_blabla_subtitle_text {
+    font-size: 32px;
+  }
+
+  .main_article_blabla_text_01,
+  .main_article_blabla_text_02,
+  .main_article_blabla_text_03 {
+    font-size: 16px;
+    max-width: 445px;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
+  .main_title {
+    max-width: 700px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 80px;
+    padding-left: 250px;
+  }
+
+  .main_article_section_title {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  .main_article_section_img {
+    display: block;
+    height: 225px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main_article_athlets .main_article_section_img {
+    position: absolute;
+    left: -350px;
+    top: -40px;
+    z-index: 5;
+  }
+
+  .main_article_blabla_01,
+  .main_article_blabla_02,
+  .main_article_blabla_03 {
+    padding: 0;
+    margin: 0;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .main_article_blabla_01 {
+    background-color: #ffffff;
+  }
+
+  .main_subtitle {
+    position: absolute;
+    left: 53%;
+    top: 55px;
+    max-width: 400px;
+  }
+
+  .main_subtitle::after {
+    width: 21px;
+    height: 6px;
+    border-radius: 3px;
+  }
+
+  .main_article_blabla_subtitle_number {
+    font-size: 18px;
+  }
+
+  .main_article_blabla_subtitle_text {
+    font-size: 36px;
+  }
+
+  .main_article_blabla_text_01,
+  .main_article_blabla_text_02,
+  .main_article_blabla_text_03 {
+    max-width: 700px;
+    font-size: 20px;
+    position: absolute;
+    left: 53%;
+    top: 120px;
+    padding-right: 20px;
+  }
+}
+
+.main_article_players .main_article_section_img {
+  /* pplayers*/
+  padding-right: 80px;
+}
+
+.main_article_players .main_article_blabla_03 {
+  background-color: #090c35;
+}
+
+.main_article_players .main_article_blabla_subtitle_number {
+  color: #8765dd;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  /* здвигаем баскетболиста в право*/
+  .main_article_players {
+    position: relative;
+  }
+
+  .main_article_players .main_article_section_img {
+    position: absolute;
+    top: -40px;
+    right: 130px;
+  }
+
+  .main_article_players .main_title,
+  .main_article_players .main_article_blabla_01,
+  .main_article_players .main_article_blabla_02,
+  .main_article_players .main_article_blabla_03 {
+    padding-right: 180px;
+    padding-left: 0;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
+  .main {
+    overflow: hidden;
+  }
+
+  .main_article_players {
+    position: relative;
+  }
+
+  .main_article_players .main_article_section_img {
+    position: absolute;
+    left: 40%;
+    top: -40px;
+    z-index: 5;
+  }
+  .main_article_players .main_article_section_title {
+    width: auto;
+  }
+
+  .main_article_players .main_title {
+    width: 1550px;
+    max-width: 1550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0 0 20px;
+  }
+
+  .main_article_players .main_article_blabla_01,
+  .main_article_players .main_article_blabla_02,
+  .main_article_players .main_article_blabla_03 {
+    padding: 60px 0 0 0;
+    box-sizing: border-box;
+    margin: 0;
+    height: 250px;
+    position: static;
+  }
+
+  .main_article_players .main_subtitle {
+    position: static;
+    left: 10%;
+    top: 55px;
+    width: 1550px;
+    max-width: 1550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0 0 20px;
+  }
+
+  .main_subtitle::after {
+    width: 21px;
+    height: 6px;
+    border-radius: 3px;
+  }
+
+  .main_article_blabla_subtitle_number {
+    font-size: 18px;
+  }
+
+  .main_article_blabla_subtitle_text {
+    font-size: 36px;
+  }
+
+  .main_article_players .main_article_blabla_text_01,
+  .main_article_players .main_article_blabla_text_02,
+  .main_article_players .main_article_blabla_text_03 {
+    position: static;
+    width: 760px;
+    max-width: 1550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 790px 0 20px;
+  }
+}
+
+.main_no_name_text {
+  /*no_name*/
+  padding: 0 20px 0 20px;
+}
+
+.main_no_name_imges_number {
+  /*относительно позиционирую номер*/
+  position: relative;
+}
+
+.main_no_name_img {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main_no_name_title {
+  max-width: 280px;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-left: auto;
+}
+
+.main_no_name_number {
+  width: 70px;
+  height: 70px;
+  background-color: #5e42b0;
+  position: absolute;
+  bottom: -10px;
+  left: 20px; /*Позиционирую номер относительно картинки*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_no_name_title_number {
+  display: block;
+  font-family: OpenSans-Bold, sans-serif;
+  color: #f5f6f7;
+  font-size: 14px;
+}
+
+.main_no_name_title_number::after {
+  content: "";
+  width: 15px;
+  height: 4px;
+  border-radius: 3px;
+  display: block;
+  background-color: #8f7bc8;
+  position: relative;
+  z-index: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main_no_name_title_text {
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 28px;
+  color: #e7e7e7;
+  text-transform: uppercase;
+}
+
+.main_no_name_blabla {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  font-family: OpenSans-Regular, sans-serif;
+  font-size: 16px;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .main_no_name_title {
+    max-width: 650px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+  }
+
+  .main_no_name_number {
+    width: 110px;
+    height: 110px;
+    bottom: -30px;
+    right: 30px;
+  }
+
+  .main_no_name_title_number {
+    font-size: 24px;
+  }
+
+  .main_no_name_title_number::after {
+    content: "";
+    width: 25px;
+    height: 5px;
+    border-radius: 4px;
+  }
+
+  .main_no_name_title_text {
+    font-size: 80px;
+  }
+
+  .main_no_name_blabla {
+    max-width: 650px;
+    margin-bottom: 95px;
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1920px), (min-width: 1920px) {
+  .main_no_name {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main_no_name_imges_number {
+    width: 50%;
+  }
+
+  .main_no_name_text {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 0 0 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main_no_name4 {
+    order: 1;
+    padding-right: 100px;
+  }
+  .main_no_name3 {
+    order: 2;
+  }
+  .main_no_name5 {
+    order: 3;
+  }
+  .main_no_name6 {
+    order: 4;
+  }
+
+  .main_no_name_title {
+    max-width: 640px;
+    margin: 0 0 55px 0;
+  }
+
+  .main_no_name_number {
+    width: 165px;
+    height: 165px;
+    top: calc(50% - 82px);
+    left: -82px;
+  }
+
+  .main_no_name1 .main_no_name_number,
+  .main_no_name5 .main_no_name_number {
+    top: calc(50% - 82px);
+    left: calc(100% - 82px);
+  }
+
+  .main_no_name4 .main_no_name_number {
+    left: auto;
+    right: -174px;
+  }
+
+  .main_no_name_title_number {
+    font-size: 24px;
+  }
+
+  .main_no_name_title_number::after {
+    content: "";
+    width: 25px;
+    height: 5px;
+    border-radius: 3px;
+  }
+
+  .main_no_name_title_text {
+    font-size: 80px;
+  }
+
+  .main_no_name_blabla {
+    font-size: 24px;
+    max-width: 640px;
+    padding-right: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+.footer {
+  /*footer*/
+  padding: 100px 20px 10px;
+  background-image: url("../images/game_767.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+}
+
+.footer::after {
+  content: "";
+  background-color: #071441;
+  opacity: 0.9;
+  background-position: center center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.footer_svg {
+  display: block;
+  width: 55px;
+  height: 55px;
+  fill: #ffffff;
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.footer_svg_substrate {
+  width: 70px;
+  height: 70px;
+  border-radius: 15px;
+  background-color: #553ba2;
+  position: relative;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.footer_for_loading a,
+.footer_for_loading {
+  font-family: OpenSans-Bold, sans-serif;
+  font-size: 32px;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  margin-top: 60px;
+}
+
+.footer_tagline {
+  font-family: OpenSans-Regular, sans-serif;
+  font-size: 14px;
+  color: #9b8ec1;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+}
+
+.footer_button {
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .footer {
+    padding: 120px 20px 15px;
+    background-image: url("../images/game_1280.jpg");
+  }
+
+  .footer_svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .footer_svg_substrate {
+    width: 135px;
+    height: 135px;
+    border-radius: 30px;
+  }
+
+  .footer_for_loading a,
+  .footer_for_loading {
+    font-size: 80px;
+    margin-top: 70px;
+  }
+
+  .footer_tagline {
+    font-size: 36px;
+  }
+
+  .footer_button {
+    margin-top: 280px;
+    margin-bottom: 45px;
+  }
+}
